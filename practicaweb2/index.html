@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png.png" type="image/png">
+    <title>GameStore - Lo mejor de lo mejor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="logo-container">
+        <img src="img/logo.png.png" alt="GameStore Logo" class="logo">
+    </div>
+
+    <div class="search-bar">
+        <input type="text" id="inputBusqueda" placeholder="¿Qué buscas hoy?" onkeyup="buscarProducto()">
+        <i class="fas fa-search"></i>
+    </div>
+
+    <nav class="nav-menu">
+        <a href="#" onclick="filtrarProductos('Todos')">Inicio</a>
+        <a href="#" onclick="filtrarProductos('Consolas')">Consolas</a>
+        <a href="#" onclick="filtrarProductos('Accesorios')">Accesorios</a>
+        <a href="#" onclick="filtrarProductos('Juegos')">Juegos</a>
+        
+        <div class="carrito-header">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="carrito-count">0</span>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="slider-container">
+        <div class="slide active" style="background-image: url('img/banner-gamer.png.jpeg');">
+            <div class="slider-overlay">
+                <h1>EQUIPA TU <span>MUNDO GAMER</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title">Consolas y Juegos Disponibles</h2>
+
+    <div class="planes-container">
+        <div id="grid-productos" class="grid-viajes"></div>
+    </div>
+
+    <div id="contenedor-carrito" class="carrito-seccion-detalles">
+        <h2 class="section-title">Mi Carrito de Compras</h2>
+        <table id="lista-carrito">
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+        <h4 id="total-carrito">Total: $0</h4>
+    </div>
+</main>
+
+<footer>
+    <h2 class="footer-title">¿Necesitas ayuda? Escríbenos</h2>
+    <div class="social-icons">
+        <a href="https://wa.me/573206122811" target="_blank" class="icon"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/dxvid_cordoba" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/1Apacvq3B8/" target="_blank" class="icon"><i class="fab fa-facebook"></i></a>
+        <a href="mailto:gamestore@gmail.com" class="icon"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>&copy; 2026 GameStore - Lo mejor de lo mejor</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
