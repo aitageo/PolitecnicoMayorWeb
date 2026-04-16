@@ -1,57 +1,93 @@
-//Formas de acceder a los Elementos//
-// const carrito = document.querySelector("#carrito");//Con querySelector puedes acceder a clases y Ids
-// console.log(carrito);
+document.addEventListener('DOMContentLoaded', function () {
+  var listaCarrito = document.getElementById('lista-carrito');
+  var contadorCarrito = document.getElementById('cart-count');
+  var totalCarrito = document.getElementById('cart-total');
+  var year = document.getElementById('year');
+  var botonesAgregar = document.querySelectorAll('.btn');
+  var secciones = document.querySelectorAll('.reveal');
+  var inputBuscar = document.getElementById('buscar-producto');
+  var listaProductos = document.getElementById('lista-productos');
+  var mensajeSinResultados = document.getElementById('sin-resultados');
 
-// const carrito = document.getElementById("carrito");
+  var carrito = [];
 
-// const carrito = document.getElementsByTagName('span')
-// console.log(carrito);
+  year.textContent = new Date().getFullYear();
 
-//Eventos de javascript
-//Eventos del mouse
-//Listeners: Es poner algo 
-//Evento click
-document.addEventListener('DOMContentLoaded', ()=>{
-  const lista_carrito = document.getElementById('lista-carrito');
-  console.log(lista_carrito);
-  let totalCarrito = [];
-  const buttons = document.querySelectorAll('.btn');
-  buttons.forEach( (button)=>{
-    button.addEventListener('click', (e)=>{      
+  for (var i = 0; i < secciones.length; i++) {
+    secciones[i].classList.add('active');
+  }
+
+  for (var j = 0; j < botonesAgregar.length; j++) {
+    botonesAgregar[j].addEventListener('click', function (e) {
       e.preventDefault();
-      //Esto se llama el traversing deldom
-      const data = e.target.closest('.Producto')//el closest busca la clase mas cercana      
-      leerDatos(data)
-    //  cargarProductos(data)  
-    })
 
-   function leerDatos(producto){
+      var producto = e.target.closest('.Producto');
+      if (!producto) {
+        return;
+      }
 
-    const infoProducto = {
-      imagen : producto.querySelector('img').src,
-      titulo : producto.querySelector('h5').textContent, //es el contenido del texto
-      precio : parseInt(producto.querySelector('.precio').textContent),//parseint es para convertir texto a numero
-      id : producto.querySelector('a').getAttribute('data-id')
+      var titulo = producto.querySelector('h5').textContent;
+      var precio = parseInt(producto.querySelector('.precio').textContent, 10);
+
+      carrito.push({ titulo: titulo, precio: precio });
+      pintarCarrito();
+    });
+  }
+
+  listaCarrito.addEventListener('click', function (e) {
+    if (e.target.tagName !== 'BUTTON') {
+      return;
     }
 
-    console.log(infoProducto);
+    var index = parseInt(e.target.getAttribute('data-index'), 10);
+    carrito.splice(index, 1);
+    pintarCarrito();
+  });
 
+  if (inputBuscar && listaProductos) {
+    inputBuscar.addEventListener('input', filtrarProductos);
+  }
 
-    
-    
-    
+  function pintarCarrito() {
+    listaCarrito.innerHTML = '';
 
-   }
+    var total = 0;
 
-  
-  })
-  
-  
+    for (var k = 0; k < carrito.length; k++) {
+      total += carrito[k].precio;
 
+      var li = document.createElement('li');
+      li.className = 'cart-item';
+      li.innerHTML = '<span>' + carrito[k].titulo + ' - $' + carrito[k].precio + '</span>' +
+        '<button data-index="' + k + '" type="button">Quitar</button>';
 
-  
+      listaCarrito.appendChild(li);
+    }
 
-})   
+    contadorCarrito.textContent = carrito.length;
+    totalCarrito.textContent = total;
+  }
+
+  function filtrarProductos() {
+    var texto = inputBuscar.value.toLowerCase().trim();
+    var productos = listaProductos.querySelectorAll('.Producto');
+    var coincidencias = 0;
+
+    for (var i = 0; i < productos.length; i++) {
+      var nombre = productos[i].querySelector('h5').textContent.toLowerCase();
+      var visible = nombre.indexOf(texto) !== -1;
+
+      productos[i].style.display = visible ? '' : 'none';
+      if (visible) {
+        coincidencias++;
+      }
+    }
+
+    if (mensajeSinResultados) {
+      mensajeSinResultados.hidden = coincidencias > 0;
+    }
+  }
+});
 
 
 

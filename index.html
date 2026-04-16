@@ -1,176 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Programas Tecnicos,Bachillerato</title>
-  <link rel="shortcut icon" href="./img/Imagen1.jpg" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Urban Tech</title>
+	<link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-  <div class="barra">
-    <img src="./img/telefono.png" id="Telefono" alt="Telefono" srcset="./img/telefono.png">Número único
-  </div>
-  <section>
-    <div class="logo">
-      <img src="./img/Logo-Poli-30-anos.png" id="logo" alt="" srcset="">
-      <div class="botones">
-        <button class="button">Preinscribete Ya </button>
-        <button class="button button2">Campus virtual</button>
-        <img src="./img/empty_11341308.png" class="carrito" alt="imagen de un carrito de compra" srcset="">
-        <span class="carrito-count">0</span>
-      </div>
-    </div>
-  </section>
-  <!-- Tabla del carrito -->
-   <div id="carrito">
-               <table id="lista-carrito" class="table">
-                 <thead>
-                   <tr>
-                     <th scope="col">Imagen</th>
-                     <th scope="col">Nombre</th>
-                     <th scope="col">Precio</th>
-                     <th scope="col">Cantidad</th>
-                     <th scope="col"></th>
-                   </tr>
-                 </thead>
-                 <tbody>
-                  
-                 </tbody>
-               </table>
-               <div id="total-carrito">Total: $0.00</div>
-             </div>
-  <!-- Barra de navegacion -->
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-white">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Politecnico</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Programas</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Estudiantes
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Q10</a></li>
-                <li><a class="dropdown-item" href="#">Ingreso a Eva</a></li>
-                <li><a class="dropdown-item" href="#">Solicitudes</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!-- Termina barra de navegacion -->
-  <!-- Carrousel -->
-  <div class="carrousel">
-    <div id="carouselExample" class="carousel slide active" data-bs-ride="carousel" data-bs-interval="3000">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./img/1.png" class="d-block w-100 img-fuid" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/2.png" class="d-block w-100 img-fuid" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/3.png" class="d-block w-100 img-fuid" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-  <!-- Fin Carrousel -->
-  <!-- Contenedor de las tarjetas -->
-  <section>
-    <div class="contenedor">
-      <div class="row h-100">
-        <!-- Comienza la fila -->
-        <div class="col-6 col-md-3 mb-5 rounded d-flex h-100 Producto">
-          <div class="card" style="width: 18rem;">
-            <img src="./img/Captura de pantalla 2026-03-21 143644.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Primeros Auxilios</h5>
-              <p class="precio">45000</p>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                content.</p>
-                <a href="#" class="btn btn-primary"  data-id="1">Agregar al carrito </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-md-3 mb-5 rounded d-flex h-100 Producto">
-            <div class="card" style="width: 18rem;">
-              <img src="./img/Captura de pantalla 2026-03-21 143658.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Fotografia</h5>
-                <p class="precio">45000</p>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                  content.</p>
-              <a href="#" class="btn btn-primary" data-id="2">Agregar al carrito </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3 mb-5 rounded d-flex h-100 Producto">
-          <div class="card" style="width: 18rem;">
-            <img src="./img/Captura de pantalla 2026-03-21 143710.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Finanzas</h5>
-              <p class="precio">45000</p>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                content.</p>
-                <a href="#" class="btn btn-primary" data-id="3">Agregar al carrito </a>
-            </div>
-          </div>
-        </div>
-             <div class="col-6 col-md-3 mb-5 rounded d-flex h-100 Producto">
-          <div class="card" style="width: 18rem;">
-            <img src="./img/Captura de pantalla 2026-03-21 143741.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Medio Ambiente</h5>
-              <p class="precio">45000</p>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                content.</p>
-              <a href="#" class="btn btn-primary" data-id="4">Agregar al carrito </a>
-            </div>
-          </div>
-        </div>
-        <!-- Termina la fila -->
-      </div>
-    </div>
-  </section>
-  <footer>
-    alfonsoadame@Politecnicomayor.edu.co
-  </footer>
+	<header class="site-header">
+		<nav class="nav container">
+			<a href="#" class="brand">
+				<img class="brand-mark" src="./img/ChatGPT%20Image%2013%20mar%202026,%2007_12_39.png" alt="Logo Urban Tech">
+				<div class="brand-text">
+					<span>Urban</span>
+					<strong>Tech</strong>
+				</div>
+			</a>
+			<div class="nav-links">
+				<a href="#productos">Productos</a>
+				<a href="#coleccion">Coleccion</a>
+				<a href="#contacto">Contacto</a>
+				<a class="cart-nav" href="#carrito">Carrito <span id="cart-count">0</span></a>
+				<a class="btn-login" href="./login.html">Login</a>
+			</div>
+		</nav>
+	</header>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-  <script src="./js/index.js"></script>
+	<main>
+		<section class="section container cart-top reveal" id="carrito">
+			<div class="section-head">
+				<h3>Tu carrito</h3>
+				<p>Total: $<span id="cart-total">0</span></p>
+			</div>
+			<ul id="lista-carrito" class="cart-list"></ul>
+		</section>
+
+		<section class="hero container reveal">
+			<div class="hero-content">
+				<p class="kicker">NEON CITY EXPERIENCE</p>
+				<h2>El futuro urbano tiene nombre: Urban Tech</h2>
+				<p class="hero-text">Diseno inspirado en la ciudad digital: luz, potencia y actitud para tu setup de otro nivel.</p>
+				<a class="cta" href="#productos">Ver productos</a>
+			</div>
+			<div class="hero-art">
+				<img src="./img/ChatGPT%20Image%2013%20mar%202026,%2007_12_39.png" alt="Identidad Urban Tech">
+			</div>
+		</section>
+
+		<section id="productos" class="section container reveal">
+			<div class="section-head">
+				<h3>Destacados</h3>
+				<div class="search-wrap">
+					<label for="buscar-producto">Buscar</label>
+					<input type="search" id="buscar-producto" placeholder="Ej: Laptop, USB, RAM" autocomplete="off">
+				</div>
+			</div>
+
+			<div class="grid-products" id="lista-productos">
+				<article class="Producto card">
+					<img src="./img/descarga.jfif" alt="Teclado gaming">
+					<h5>Teclado Mecanico Pro</h5>
+					<p class="precio">79</p>
+					<a href="#" class="btn" data-id="1">Agregar</a>
+				</article>
+
+				<article class="Producto card">
+					<img src="./img/bestmobilelaptops.jpg" alt="Laptop moderna">
+					<h5>Laptop Urban X</h5>
+					<p class="precio">899</p>
+					<a href="#" class="btn" data-id="2">Agregar</a>
+				</article>
+
+				<article class="Producto card">
+					<img src="./img/USB-e1537379337251.jpg" alt="Memoria USB">
+					<h5>USB 128GB Neon</h5>
+					<p class="precio">29</p>
+					<a href="#" class="btn" data-id="3">Agregar</a>
+				</article>
+
+				<article class="Producto card">
+					<img src="./img/memoria-ram-10000-veces-rapida-scaled-e1746201566411.jpg" alt="Memoria RAM">
+					<h5>Memoria RAM Turbo</h5>
+					<p class="precio">119</p>
+					<a href="#" class="btn" data-id="4">Agregar</a>
+				</article>
+			</div>
+			<p id="sin-resultados" class="search-empty" hidden>No encontramos productos con ese termino.</p>
+		</section>
+
+		<section id="coleccion" class="section-alt reveal">
+			<div class="container split">
+				<img src="./img/CATEGORIA-BannerSlider_G_Mouse.jpg" alt="Mouse de alto rendimiento">
+				<div>
+					<h3>Diseno urbano, potencia real</h3>
+					<p>Creamos una seleccion de productos para estudiar, jugar y trabajar con actitud. Todo en un estilo limpio y oscuro.</p>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer id="contacto" class="site-footer">
+		<div class="container footer-grid">
+			<div class="footer-col">
+				<h4>Urban Tech</h4>
+				<p>Tecnologia urbana al mejor precio.</p>
+			</div>
+
+			<div class="footer-col">
+				<h5>Enlaces</h5>
+				<a href="#">Inicio</a>
+				<a href="#productos">Productos</a>
+				<a href="#contacto">Contacto</a>
+				<a href="#">Nosotros</a>
+			</div>
+
+			<div class="footer-col footer-contact">
+				<h5>Contacto</h5>
+				<p>Whatsapp: +57 3129876780</p>
+				<p>Medellin, Colombia</p>
+				<p>ventas@urbantech.com</p>
+			</div>
+		</div>
+
+		<div class="container footer-bottom">
+			<p>&copy; <span id="year"></span> Urban Tech | Todos los derechos reservados</p>
+		</div>
+	</footer>
+
+	<script src="./js/index.js"></script>
 </body>
-
 </html>

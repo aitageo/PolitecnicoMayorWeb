@@ -1,11 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Urban Tech | Login</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <header class="site-header">
+        <nav class="nav container">
+            <h1 class="logo">Urban Tech</h1>
+            <div class="nav-links">
+                <a href="./index.html">Inicio</a>
+            </div>
+        </nav>
+    </header>
+ 
+    <main class="login-main">
+        <section class="login-card reveal active">
+            <h2 class="login-title">Bienvenido</h2>
+            <p class="login-subtitle">Inicia sesion para continuar en Urban Tech.</p>
+
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="email">Correo</label>
+                    <input id="email" type="email" placeholder="correo@ejemplo.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Contrasena</label>
+                    <input id="password" type="password" placeholder="********" required minlength="6">
+                </div>
+
+                <button class="submit-btn" type="submit">Entrar</button>
+                <p id="login-msg" class="login-msg"></p>
+            </form>
+
+            <a class="back-link" href="./index.html">Volver al inicio</a>
+        </section>
+    </main>
+
     <script src="./js/login.js"></script>
 </body>
 </html>
