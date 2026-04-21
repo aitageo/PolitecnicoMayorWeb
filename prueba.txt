@@ -19,4 +19,8 @@ Jeronimo
 Jose David Pino Cordoba
 Jose David Pino Cordoba
 Camila Abello
+<<<<<<< HEAD
 >>>>>>> f7aa3c04b81e2952cc3e9c54c6de31c73174f35c
+=======
+jisel londoño
+>>>>>>> 936b14c0280b0cbd7d63a40db455752ad03b3c6e
