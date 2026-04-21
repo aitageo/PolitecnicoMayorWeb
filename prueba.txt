@@ -1,7 +1,7 @@
 Alfonso
 Jhon Daniel
 <<<<<<< HEAD
-Tomas Muñoz
+Tomas 
 =======
 <<<<<<< HEAD
 Michel
