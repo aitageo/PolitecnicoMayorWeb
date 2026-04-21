@@ -1,5 +1,15 @@
 Alfonso
 Jhon Daniel
+<<<<<<< HEAD
+Michel
+=======
 camilo
+<<<<<<< HEAD
 Juan Camilo Salazar Cifuentes
 Juan Camilo
+=======
+>>>>>>> c5453f56690c60bee726ecfff90470c620c5626f
+dubraska
+sebastian
+Jeronimo
+>>>>>>> 1adbd7693f5fd1b6aaa2fcbe2934e8a04743e072
