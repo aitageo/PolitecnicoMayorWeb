@@ -1,176 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Programas Tecnicos,Bachillerato</title>
-  <link rel="shortcut icon" href="./img/Imagen1.jpg" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Deportiva</title>
+    <link rel="shortcut icon" href="./img/Logo deportivo con pelotas variadas.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@250..700&display=swap" 
+    rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 </head>
-
 <body>
-  <div class="barra">
-    <img src="./img/telefono.png" id="Telefono" alt="Telefono" srcset="./img/telefono.png">Número único
-  </div>
-  <section>
-    <div class="logo">
-      <img src="./img/Logo-Poli-30-anos.png" id="logo" alt="" srcset="">
-      <div class="botones">
-        <button class="button">Preinscribete Ya </button>
-        <button class="button button2">Campus virtual</button>
-        <img src="./img/empty_11341308.png" class="carrito" alt="imagen de un carrito de compra" srcset="">
-        <span class="carrito-count">0</span>
-      </div>
-    </div>
-  </section>
-  <!-- Tabla del carrito -->
-   <div id="carrito">
-               <table id="lista-carrito" class="table">
-                 <thead>
-                   <tr>
-                     <th scope="col">Imagen</th>
-                     <th scope="col">Nombre</th>
-                     <th scope="col">Precio</th>
-                     <th scope="col">Cantidad</th>
-                     <th scope="col"></th>
-                   </tr>
-                 </thead>
-                 <tbody>
-                  
-                 </tbody>
-               </table>
-               <div id="total-carrito">Total: $0.00</div>
-             </div>
-  <!-- Barra de navegacion -->
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-white">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Politecnico</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+
+    <main>
+        <h1 class="mt-4">Tienda Deportiva</h1>
+            <div class="nav">
+
+       <header>
+         <!-- Barra de navegacion -->
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-purple">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Catalogo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Programas</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Estudiantes
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Q10</a></li>
-                <li><a class="dropdown-item" href="#">Ingreso a Eva</a></li>
-                <li><a class="dropdown-item" href="#">Solicitudes</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!-- Termina barra de navegacion -->
-  <!-- Carrousel -->
-  <div class="carrousel">
-    <div id="carouselExample" class="carousel slide active" data-bs-ride="carousel" data-bs-interval="3000">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./img/1.png" class="d-block w-100 img-fuid" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/2.png" class="d-block w-100 img-fuid" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/3.png" class="d-block w-100 img-fuid" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+
+        <li class="nav-item dropdown">
+        <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+        Camisas
+        </a>
+        <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Camiseta de manga corta</a></li>
+        <li><a class="dropdown-item" href="#">Camiseta de manga larga</a></li>
+        <li><a class="dropdown-item" href="#">Camiseta sin mangas</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Camisetas de futbol 
+        </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Pantalones
+        </a>
+        <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Joggers</a></li>
+        <li><a class="dropdown-item" href="#"> Leggings</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Bikers</a></li>
+        </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Accesorios
+        </a>
+
+        <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Bandas elásticas</a></li>
+        <li><a class="dropdown-item" href="#">Mancuernas</a></li>
+        <li><a class="dropdown-item" href="#">Guantes</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Balones</a></li>
+        </ul>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true"></a>
+        </li>
+        </ul>
+
+        <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" id="searchInput" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-dark" type="button">Buscar</button>
+      </form>
     </div>
   </div>
-  <!-- Fin Carrousel -->
-  <!-- Contenedor de las tarjetas -->
-  <section>
-    <div class="contenedor">
-      <div class="row h-100">
-        <!-- Comienza la fila -->
-        <div class="col-6 col-md-3 mb-5 rounded d-flex h-100 Producto">
-          <div class="card" style="width: 18rem;">
-            <img src="./img/Captura de pantalla 2026-03-21 143644.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Primeros Auxilios</h5>
-              <p class="precio">45000</p>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                content.</p>
-                <a href="#" class="btn btn-primary"  data-id="1">Agregar al carrito </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-md-3 mb-5 rounded d-flex h-100 Producto">
-            <div class="card" style="width: 18rem;">
-              <img src="./img/Captura de pantalla 2026-03-21 143658.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Fotografia</h5>
-                <p class="precio">45000</p>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                  content.</p>
-              <a href="#" class="btn btn-primary" data-id="2">Agregar al carrito </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3 mb-5 rounded d-flex h-100 Producto">
-          <div class="card" style="width: 18rem;">
-            <img src="./img/Captura de pantalla 2026-03-21 143710.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Finanzas</h5>
-              <p class="precio">45000</p>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                content.</p>
-                <a href="#" class="btn btn-primary" data-id="3">Agregar al carrito </a>
-            </div>
-          </div>
-        </div>
-             <div class="col-6 col-md-3 mb-5 rounded d-flex h-100 Producto">
-          <div class="card" style="width: 18rem;">
-            <img src="./img/Captura de pantalla 2026-03-21 143741.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Medio Ambiente</h5>
-              <p class="precio">45000</p>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                content.</p>
-              <a href="#" class="btn btn-primary" data-id="4">Agregar al carrito </a>
-            </div>
-          </div>
-        </div>
-        <!-- Termina la fila -->
-      </div>
+        
+</nav>
+</header>
+    <!-- Termina barra de navegacion -->
+     <!-- Tabla del carrito -->
+<div class="header">
+    <div class="carrito">
+        <img src="./img/carro-de-la-carretilla.jpg" class="carrito-img" alt="Carrito de compras">
+        <span class="carrito-count">0</span>
     </div>
-  </section>
-  <footer>
-    alfonsoadame@Politecnicomayor.edu.co
-  </footer>
+    
+    <!-- Botones -->
+    <button>Iniciar Sesión</button>
+    <button>Registrate</button>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-  <script src="./js/index.js"></script>
+</div>
+</div>
+    <div id="contenedor-carrito">
+        <table id="lista-carrito" class="table">
+            <thead>
+                <tr>
+                    <th scope="col">imagen</th>
+                    <th scope="col">nombre</th>
+                    <th scope="col">precio</th>
+                    <th scope="col">cantidad</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div id="total-carrito">Total: $0.00</div>
+        <button id="vaciar-carrito">Vaciar carrito</button>
+    </div>
+
+   </main>
+
+   <!-- Carrousel -->
+    <h2>Bienvenidos</h2>
+   
+    <div class="hero-section">
+    <div class="hero-content">
+    <div class="intro">
+    <p>Descubre nuestra tienda deportiva que ofrece ropa especializada para brindar la salud y comodidad hacia deporte </p>
+
+    <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+    <img src="./img/Mundial.jpg" class="d-block w-100 " alt="Imagen de copa">
+    </div>
+
+    <div class="carousel-item">
+    <img src="./img/Oferta.jpg" class="d-block w-100" alt="imagen de oferta">
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+</div>
+
+    <!-- Fin Carrousel -->
+     <!-- Contenedor de las tarjetas -->
+    <h2 class="titulo">Lo mas vendido</h2>       
+
+        <div class="cards-container">
+        <div class="card">
+        <img src="./img/Camisas negra.jpg" class="card-img" alt="Camisa negra">
+        <h3 >Camisa negra</h3>
+        <p class="p-text">Camiseta de running transpirable</p>
+        <p >$55.000</p>
+        <a href="#" class="btn" data-id="1">Agregar al Carrito</a>
+    </div>
+
+        <div class="card">
+        <img src="./img/leggins.jpg" class="card-img" alt="Leggings">
+        <h3 >leggins  marino</h3>
+        <p class="p-text">leggins de running </p>
+        <p >$45.000</p>
+        <a href="#" class="btn" data-id="2">Agregar al Carrito</a>
+        
+    
+</div>
+        <div class="card">
+        <img src="./img/golty.jpg" class="card-img" alt="balon">
+        <h3 >balon resistente</h3>
+        <p class="p-text">100% original</p>
+        <p >$145.000</p>
+        <a href="#" class="btn" data-id="3">Agregar al Carrito</a>
+    
+</div>
+        <div class="card">
+        <img src="./img/tenis.jpg" class="card-img" alt="tenis">
+        <h3 >Tenis adidas </h3>
+        <p class="p-text">tenis para correr</p>
+        <p >$115.000</p>
+        <a href="#" class="btn" data-id="4">Agregar al Carrito</a>
+    
+</div>
+        <div class="card">
+        <img src="./img/Mancuernas.jpg" class="card-img" alt="Mancuernas">
+        <h3 >Mancuernas</h3>
+        <p class="p-text">Mancuernas de 20 kg </p>
+        <p >$65.000</p>
+        <a href="#" class="btn" data-id="5">Agregar al Carrito</a>
+    
+</div>
+        <div class="card">
+        <img src="./img/joggers.jpg" class="card-img" alt="joggers">
+        <h3 >joggers Nike</h3>
+        <p class="p-text">material poliester</p>
+        <p >$80.000</p>
+        <a href="#" class="btn" data-id="6">Agregar al Carrito</a>
+</div>
+</div>
+        <!-- Cosas extra-->
+        <h2>Conocenos</h2>
+        <img src="./img/equipos-deportivos.jpg" class="deporte-img" alt="imagen deporte">
+        <h3 class="titulo-1">Mas de 60 deportes</h3>
+        <p class="texto-1">Encentra mas de 5000 productos para hacer deporte</p>
+        <h3 class="titulo-2">Metodos de Entrega</h3>
+        <img src="./img/entrega.jpg" class="Entrega-img" alt="imagen de entregar">
+        <p class="texto-2">Nuestros metedos de entrega para diferentes cuidades y paises</p>
+        <h3 class="titulo-3">Cambios y Devoluciones</h3>
+        <img src="./img/Cambios.jpg" class="Cambios-img" alt="Imagen de cambios">
+        <p class="texto-3">Tienes 30 dias para realizar tu cambios y devoluciones</p>
+        
+        <h2 class="Contactanos">Contactanos</h2>
+        <p class="texto-4">EMPRESA</p>
+        <p class="texto-5">Quienes Somos</p>
+        <p class="texto-6">Economia Circular</p>
+        <p class="texto-7">Sosteniblidad</p>
+        <p class="texto-8">COMPRA</p>
+        <p class="texto-9">Transferencia</p>
+        <p class="texto-10">Efectivo</p>
+        <p class="texto-11">ASISTENCIA</p>        
+        <p class="texto-12">Dudas Frecuentes</p>        
+        <p class="texto-13">Ventas por Whatsapp</p>        
+        <p class="texto-14">Envio</p>
+        <p class="texto-15">Mapas del Sitio</p>        
+
+        <!-- Redes Sociales-->
+        <img src="./img/Redes.jpg" class="Redes-img" alt="imagen de  redes">
+        <p class="texto-16">57+ 943292675</p>
+        <p class="texto-17">@Tienda_Deportiva_10</p>
+        <p class="texto-18">@tienda_Deportiiva:1010</p>
+
+        <div class="footer">
+            <p>&copy; Sebastian Higuita - 2026 Tienda Deportiva</p>
+        </div>
+     </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
 </body>
-
 </html>
