@@ -5,7 +5,6 @@ Tomas
 HEAD
 Michel
 camilo
-HEAD
 Juan Camilo Salazar Cifuentes
 Juan Camilo
 dubraska
@@ -14,7 +13,6 @@ Jeronimo
 Jose David Pino Cordoba
 Jose David Pino Cordoba
 Camila Abello
-HEAD
 jisel londoño
 giskard
 jefferson
