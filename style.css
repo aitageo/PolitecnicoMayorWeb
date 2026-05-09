@@ -198,7 +198,82 @@ footer {
     text-align: center;
     padding: 30px;
 }
+body {
+    background-color: #fce4ec;
+}
 
+h1, h2 {
+    color: #5618c2;
+}
 
+.button {
+    background-color: #571dde;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.card {
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.precio {
+    font-weight: bold;
+    color: #1e21e9;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.card {
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+.button, .btn {
+    transition: all 0.3s ease;
+}
+
+.button:hover, .btn:hover {
+    background-color: #0a0708;
+    transform: scale(1.1);
+}
+.fade-in {
+    opacity: 0;
+    animation: aparecer 1s ease-in forwards;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#carouselExample {
+    height: 500px;
+}
+
+#carouselExample img {
+    height: 500px;
+    object-fit: cover;
+}
+section {
+    margin-top: 50px;
+}
 
 
